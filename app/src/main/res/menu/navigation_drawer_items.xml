@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/city1"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Home"/>
+        <!--<item
+            android:id="@+id/city2"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:action-layout="vis"
+            android:title="Blog"/>
+
+        <item
+            android:id="@+id/city3"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="About"/>
+
+        <item
+            android:id="@+id/city4"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Contact"/>
+        <item
+            android:id="@+id/city5"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Home"/>
+        <item
+            android:id="@+id/city6"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Blog"/>
+
+        <item
+            android:id="@+id/city7"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="About"/>
+
+        <item
+            android:id="@+id/city8"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Contact"/>
+        <item
+            android:id="@+id/city9"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Home"/>
+        <item
+            android:id="@+id/city10"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Blog"/>
+
+        <item
+            android:id="@+id/city11"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="About"/>
+
+        <item
+            android:id="@+id/city12"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Contact"/>
+        <item
+            android:id="@+id/city13"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Home"/>
+        <item
+            android:id="@+id/city14"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Blog"/>
+
+        <item
+            android:id="@+id/city15"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="About"/>
+
+        <item
+            android:id="@+id/navItem16"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Contact"/>
+        <item
+            android:id="@+id/navItem17"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Contact"/>
+        <item
+            android:id="@+id/navItem18"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Contact"/>
+        <item
+            android:id="@+id/navItem19"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Contact"/>
+        <item
+            android:id="@+id/navItem20"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Contact"/>-->
+    </group>
+
+</menu>
