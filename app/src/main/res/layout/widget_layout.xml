@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/weatherContainer"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background"
+        android:padding="6dip" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/descImageWidgetSmall"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/shower_rain_day"/>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <!--temp-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight=".6">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="49"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:textColor="#F44336"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/hiWidget"
+                android:layout_weight=".5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:textColor="#2196F3"
+                android:id="@+id/lowWidget"
+                android:text="44"
+                android:layout_weight=".5"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+        android:id="@+id/errorMessage"
+        android:background="@drawable/background"
+        android:visibility="gone"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Something bad happened"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

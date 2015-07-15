@@ -150,11 +150,11 @@ public class WeatherDetailActivity extends ActionBarActivity {
         if(w.getId() == "503" ||w.getId() == "511"||w.getId() == "504"){
             desc.setText(stringDesc );
         }else if(containsRainWord && !containsSnowWord ){
-            desc.setText(stringDesc + " Bring an umrella!");
+            desc.setText(stringDesc + " Bring an umbrella!");
         }else if(!containsRainWord && containsSnowWord ){
             desc.setText(stringDesc + " Wear snow boots!");
         }else if(containsRainWord && containsSnowWord ){
-            desc.setText(stringDesc + " Bring an umrella and wear snow boots!");
+            desc.setText(stringDesc + " Bring an umbrella and wear snow boots!");
         }else{
             desc.setText(stringDesc);
         }

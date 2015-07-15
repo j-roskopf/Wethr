@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background"
+        android:id="@+id/weatherContainer"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:padding="6dp" >
+
+        <!--top-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight=".3"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/digitalClock"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0:0"
+            android:layout_gravity="center"
+            android:layout_weight=".5" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/dateWidget"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0:0"
+            android:layout_gravity="center"
+            android:layout_weight=".5" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight=".7"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_weight=".6">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:text="49"
+                    android:gravity="center"
+                    android:layout_weight=".4"
+                    android:layout_width="0dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/currentTempWidget" />
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:id="@+id/descImageWidget"
+                    android:src="@drawable/shower_rain_day"
+                    android:layout_height="fill_parent" />
+
+
+
+
+                            <!--temp-->
+
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="#000000"
+                android:textSize="@dimen/desc_text_size"
+                android:id="@+id/widgetDesc"
+                android:layout_weight=".4"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Rain"/>
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/errorMessage"
+        android:background="@drawable/background"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#000000"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Something bad happened"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

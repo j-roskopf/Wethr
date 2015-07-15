@@ -182,16 +182,19 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
             // Serialize and persist the activated item position.
-        Log.d("D", "123456789 putting away w with temp = " + rightNowWeatherObject.getTemp());
-        Log.d("D", "123456789 right now text is = " + rightNowTextView.getText().toString());
-        Log.d("D", "123456789 right now icon is = " + weatherIconImageView.getTag());
-        Log.d("D", "123456789 THE TITLE IS = " + actionbarTitle);
-        outState.putParcelable("currentWeather", rightNowWeatherObject);
+        if(rightNowWeatherObject!=null){
+            Log.d("D", "123456789 putting away w with temp = " + rightNowWeatherObject.getTemp());
+            Log.d("D", "123456789 right now text is = " + rightNowTextView.getText().toString());
+            Log.d("D", "123456789 right now icon is = " + weatherIconImageView.getTag());
+            Log.d("D", "123456789 THE TITLE IS = " + actionbarTitle);
+            outState.putParcelable("currentWeather", rightNowWeatherObject);
+            outState.putString("rightNowIconTag", weatherIconImageView.getTag().toString());
+            outState.putString("rightNowTemp", rightNowTextView.getText().toString());
+        }
+
         outState.putParcelableArrayList("posts", mWeatherList);
         outState.putString("zip", zipToUseIfLocationFailed);
         outState.putString("title", actionbarTitle);
-        outState.putString("rightNowIconTag", weatherIconImageView.getTag().toString());
-        outState.putString("rightNowTemp", rightNowTextView.getText().toString());
         if(locationError){
             outState.putString("locationError", "true");
         }else{
