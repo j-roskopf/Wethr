@@ -824,13 +824,13 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                                 + address.getLatitude()
                                 + "&lon="
                                 + address.getLongitude()
-                                + "&cnt=14&mode=json&units=imperial";
+                                + "&cnt=14&mode=json&units=imperial&APPID=aacb363e7504e9ce59ac08a87d80abc4";
                     }else{
                         url = "http://api.openweathermap.org/data/2.5/forecast/daily?lat="
                                 + address.getLatitude()
                                 + "&lon="
                                 + address.getLongitude()
-                                + "&cnt=14&mode=json&units=metric";
+                                + "&cnt=14&mode=json&units=metric&APPID=aacb363e7504e9ce59ac08a87d80abc4";
                     }
 
                     Log.d("D", "123654 setting url to = " + url);
@@ -874,10 +874,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
             if(PreferenceManager.getDefaultSharedPreferences(this).getString(getResources().getString(R.string.celcius_or_fahrenheit), getResources().getString(R.string.fahrenheit)).equals(getResources().getString(R.string.fahrenheit))){
                 url = "http://api.openweathermap.org/data/2.5/forecast/daily?lat="
-                        + lat + "&lon=" + lon + "&cnt=14&mode=json&units=imperial";
+                        + lat + "&lon=" + lon + "&cnt=14&mode=json&units=imperial&APPID=aacb363e7504e9ce59ac08a87d80abc4";
             }else{
                 url = "http://api.openweathermap.org/data/2.5/forecast/daily?lat="
-                        + lat + "&lon=" + lon + "&cnt=14&mode=json&units=metric";
+                        + lat + "&lon=" + lon + "&cnt=14&mode=json&units=metric&APPID=aacb363e7504e9ce59ac08a87d80abc4";
             }
 
             Log.d("D", "123654 setting url to 2 = " + url);
@@ -928,21 +928,21 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             if(PreferenceManager.getDefaultSharedPreferences(this).getString(getResources().getString(R.string.celcius_or_fahrenheit), getResources().getString(R.string.fahrenheit)).equals(getResources().getString(R.string.fahrenheit))){
                 url = "http://api.openweathermap.org/data/2.5/weather?lat="
                         + latitude + "&lon=" + longitude
-                        + "&mode=json&units=imperial";
+                        + "&mode=json&units=imperial&APPID=aacb363e7504e9ce59ac08a87d80abc4";
             }else{
                 url = "http://api.openweathermap.org/data/2.5/weather?lat="
                         + latitude + "&lon=" + longitude
-                        + "&mode=json&units=metric";
+                        + "&mode=json&units=metric&APPID=aacb363e7504e9ce59ac08a87d80abc4";
             }
 
 
         } else {
             if(PreferenceManager.getDefaultSharedPreferences(this).getString(getResources().getString(R.string.celcius_or_fahrenheit), getResources().getString(R.string.fahrenheit)).equals(getResources().getString(R.string.fahrenheit))){
                 url = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat
-                        + "&lon=" + lon + "&mode=json&units=imperial";
+                        + "&lon=" + lon + "&mode=json&units=imperial&APPID=aacb363e7504e9ce59ac08a87d80abc4";
             }else{
                 url = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat
-                        + "&lon=" + lon + "&mode=json&units=metric";
+                        + "&lon=" + lon + "&mode=json&units=metric&APPID=aacb363e7504e9ce59ac08a87d80abc4";
             }
 
         }
@@ -1237,14 +1237,14 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                                     + address.getLatitude()
                                     + "&lon="
                                     + address.getLongitude()
-                                    + "&cnt=14&mode=json&units=imperial";
+                                    + "&cnt=14&mode=json&units=imperial&APPID=aacb363e7504e9ce59ac08a87d80abc4";
                         }else{
                             // Set up URL
                             url = "http://api.openweathermap.org/data/2.5/forecast/daily?lat="
                                     + address.getLatitude()
                                     + "&lon="
                                     + address.getLongitude()
-                                    + "&cnt=14&mode=json&units=metric";
+                                    + "&cnt=14&mode=json&units=metric&APPID=aacb363e7504e9ce59ac08a87d80abc4";
                         }
 
 
@@ -1300,12 +1300,12 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             if(PreferenceManager.getDefaultSharedPreferences(this).getString(getResources().getString(R.string.celcius_or_fahrenheit), getResources().getString(R.string.fahrenheit)).equals(getResources().getString(R.string.fahrenheit))){
                 url = "http://api.openweathermap.org/data/2.5/forecast/daily?lat="
                         + latitude + "&lon=" + longitude
-                        + "&cnt=14&mode=json&units=imperial";
+                        + "&cnt=14&mode=json&units=imperial&APPID=aacb363e7504e9ce59ac08a87d80abc4";
             }else{
                 // Set up URL
                 url = "http://api.openweathermap.org/data/2.5/forecast/daily?lat="
                         + latitude + "&lon=" + longitude
-                        + "&cnt=14&mode=json&units=metric";
+                        + "&cnt=14&mode=json&units=metric&APPID=aacb363e7504e9ce59ac08a87d80abc4";
             }
             if (haveNetworkConnection()) {
                 getCurrentWeather(latitude + "", longitude + "", locationToSend);
