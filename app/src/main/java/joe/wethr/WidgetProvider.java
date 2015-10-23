@@ -63,7 +63,7 @@ public class WidgetProvider extends AppWidgetProvider {
         }
 
 
-        Log.i("ExampleWidget",  "Updating widgets " + Arrays.asList(appWidgetIds));
+        Log.i("ExampleWidget",  "Updat ing widgets " + Arrays.asList(appWidgetIds));
         Log.d("D","213546879 in onupdate");
 
 
